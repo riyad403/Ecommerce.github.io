@@ -1,0 +1,734 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Ubuntu&display=swap');
+
+/*
+font-family: 'Great Vibes', cursive;
+font-family: 'Ubuntu', sans-serif;
+*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    text-decoration: none;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+.container {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.video {
+    width: 100%;
+    position: absolute;
+    bottom: 3rem;
+    z-index: -100;
+    right: 0;
+}
+
+@media (min-aspect-ratio: 16/9) {
+    .video {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-aspect-ratio: 16/9) {
+    .video {
+        width: auto;
+        height: 100%;
+    }
+}
+
+/*.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48
+}*/
+/* ALL LOGO HERE */
+.material-symbols-outlined {
+    font-family: 'Material Symbols Outlined';
+    font-weight: normal;
+    font-style: normal;
+    line-height: 1;
+    letter-spacing: normal;
+    text-transform: none;
+    display: inline-block;
+    white-space: nowrap;
+    word-wrap: normal;
+    direction: ltr;
+    color: white;
+    -webkit-font-feature-settings: 'liga';
+    -webkit-font-smoothing: antialiased;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    width: 15%;
+    font-size: 20px;
+    margin: 5px 5px;
+    color: white;
+    padding: 0 15px;
+
+}
+
+.logo a {
+    list-style: none;
+    text-decoration: none;
+}
+
+.header {
+    width: 100%;
+    height: 70px;
+    z-index: 10000;
+    background: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    justify-content: space-between;
+}
+
+.header h2 {
+    font-family: 'Great Vibes', cursive;
+    color: white;
+    font-size: 3rem;
+}
+
+.searchbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 18%;
+    right: 5%;
+}
+
+.searchbar {
+    transition: 1s ease-in;
+}
+
+.searchbar button {
+    width: 10rem;
+    height: 4rem;
+    background: green;
+    color: white;
+    font-size: 2rem;
+
+    text-align: center;
+    font-weight: bold;
+    border: 2px solid white;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+
+.searchbar button:hover {
+    background: white;
+    border: 2px solid black;
+    color: black;
+}
+
+.searchbar input {
+    width: 25rem;
+    height: 4rem;
+    background: black;
+    color: white;
+    border: 2px solid white;
+    border-radius: 2rem;
+    font-size: 2.5rem;
+    padding: 2rem;
+}
+
+.fav {
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 18%;
+    right: 1%;
+    color: white;
+    flex-direction: column;
+    border: 2px solid white;
+    width: 20%;
+    height: 15rem;
+    border-radius: 2rem;
+    transition: 1s ease-in;
+    background: rgb(0, 0, 0, 0.7);
+    background-blend-mode: darken;
+}
+
+.fav h1 {
+    margin: 10px;
+    font-size: 3rem;
+    text-align: center;
+    font-weight: 100;
+    font-family: 'Great Vibes', cursive;
+}
+
+.fav p {
+    font-size: 2rem;
+    margin: 5px;
+    color: aquamarine;
+    font-weight: bold;
+}
+
+.login-none {
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    top: 18%;
+    right: 1%;
+    color: white;
+    border: 2px solid white;
+    width: 30%;
+    height: 25rem;
+    border-radius: 2rem;
+    transition: 1s ease-in;
+    background: rgb(0, 0, 0, 0.7);
+    background-blend-mode: darken;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.form {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.form h1 {
+    font-size: 4rem;
+    margin-bottom: 2rem;
+    color: rgb(rgb(145, 18, 18), rgb(192, 236, 221), rgb(74, 74, 118));
+}
+
+.form label {
+    font-size: 2rem;
+}
+
+.form input {
+    margin: 5px 10px;
+    border: 2px solid white;
+    border-radius: 1rem;
+    font-size: 2rem;
+    padding: 2px 5px;
+}
+
+.form button {
+    width: 40%;
+    height: 3rem;
+    border: 2px solid white;
+    border-radius: 5px;
+    background: black;
+    color: white;
+    font-size: 2rem;
+    margin: 5px;
+
+    font-weight: bold;
+}
+
+.nav {
+    padding: 0 40px;
+    width: 60%;
+}
+
+.nav ul {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+
+.nav li {
+    padding: 30px;
+    font-size: 25px;
+    color: white;
+    list-style: none;
+}
+
+.nav li a {
+    font-family: 'Ubuntu', sans-serif;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.nav li a:hover {
+    color: gray;
+}
+
+.icon {
+    text-align: right;
+    width: 15%;
+}
+
+.icon a {
+    list-style: none;
+    text-decoration: none;
+    padding: 0 10px;
+}
+
+.maintext {
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    padding-top: 6rem;
+}
+
+.lefttext {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    background: transparent;
+}
+
+.text {
+    font-size: 7rem;
+    color: rgb(240, 45, 6);
+    font-family: 'Great Vibes', cursive;
+    font-weight: bold;
+}
+
+.text-big {
+    font-size: 4rem;
+    font-weight: bold;
+    color: white;
+    font-family: 'Great Vibes', cursive;
+}
+
+.text-sm {
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: 'Ubuntu', sans-serif;
+    background: white;
+    color: black;
+    padding: 5px 10px;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+.btn {
+    width: 50%;
+    height: 4rem;
+    background: black;
+    font-size: 2.5rem;
+    color: white;
+    margin: 0 5px;
+    border: 2px solid white;
+    border-radius: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.btn:hover {
+    word-spacing: 0.5rem;
+    font-size: 2.2rem;
+    padding-left: 1rem;
+}
+
+.rigthtext {
+    width: 60%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    overflow: hidden;
+}
+
+.rigthtext img {
+    height: 90%;
+    width: 60%;
+}
+
+.container2 {
+    margin-top: 14vh;
+    width: 90%;
+    height: auto;
+    background: black;
+    right: 5%;
+    position: relative;
+    left: 5%;
+}
+
+.container2 h2 {
+    font-size: 4rem;
+    color: white;
+    text-align: center;
+    font-family: 'Great Vibes', cursive;
+}
+
+.underline {
+    height: 0.5rem;
+    width: 30%;
+    background: white;
+    margin: auto;
+    border-radius: 10px;
+    position: relative;
+}
+
+.mens {
+    width: 90%;
+    height: auto;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 10px auto;
+    flex-wrap: wrap;
+}
+
+.products {
+    width: 30rem;
+    height: 40rem;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0 10px;
+    margin: 5px 0;
+    transition: 0.5s;
+    border-radius: 2rem;
+}
+
+.products:hover {
+    cursor: pointer;
+    background: black;
+    width: 30rem;
+    height: 50rem;
+    border: 2px solid white;
+}
+
+.top {
+    width: 100%;
+    height: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+
+}
+
+.top img {
+    width: 100%;
+    height: 100%;
+}
+
+.bottom {
+    width: 90%;
+    height: 100%;
+    margin: 10px 0;
+}
+
+.btn-none {
+    display: none;
+}
+
+.btn-inline:hover {
+    display: inline;
+}
+
+.heading {
+    font-size: 2rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.desc {
+    font-size: 1.5rem;
+    margin: 10px 0;
+}
+
+.price {
+    font-size: 3rem;
+    text-align: center;
+}
+
+.bottom button {
+    width: 60%;
+    height: 3rem;
+    font-size: 1.5rem;
+    background-color: green;
+    margin: 5px 50px;
+    border: 2px solid black;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.bottom button:hover {
+    background-color: black;
+    color: white;
+    transition: 0.5s;
+    font-size: 2rem;
+}
+
+.container3 {
+    margin-top: 5vh;
+    width: 90%;
+    height: auto;
+    right: 5%;
+    position: relative;
+    left: 5%;
+}
+
+.women {
+    font-size: 4rem;
+    color: black;
+    text-align: center;
+    font-family: 'Great Vibes', cursive;
+}
+
+.container3 .line {
+    height: 0.5rem;
+    width: 30%;
+    background: black;
+    margin: auto;
+    border-radius: 10px;
+    position: relative;
+}
+
+.bottom3 {
+    width: 90%;
+    height: 100%;
+    margin: 10px 0;
+    color: black;
+}
+
+.product {
+    width: 30rem;
+    height: 40rem;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0 10px;
+    margin: 5px 0;
+    transition: 0.5s;
+    border-radius: 2rem;
+}
+
+.product:hover {
+    cursor: pointer;
+    background: rgb(119, 140, 147);
+    width: 30rem;
+    height: 50rem;
+    border: 2px solid white;
+}
+
+.bottom3 button {
+    width: 60%;
+    height: 3rem;
+    font-size: 1.5rem;
+    background-color: green;
+    margin: 5px 50px;
+    border: 2px solid black;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.bottom3 button:hover {
+    background-color: black;
+    color: white;
+    transition: 0.5s;
+    font-size: 2rem;
+}
+
+.container4 {
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+#head {
+    color: black;
+    text-decoration: underline;
+    font-size: 4rem;
+    color: black;
+    text-align: center;
+    font-family: 'Great Vibes', cursive;
+    font-weight: bolder;
+}
+
+.offers {
+    background: white;
+    width: 80%;
+    height: auto;
+    margin-top: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.parts {
+    width: 45rem;
+    height: 40rem;
+    transition: 1s;
+    background: white;
+    color: black;
+    border: 2px solid black;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.parts:hover {
+    width: 50rem;
+    height: 43rem;
+    cursor: pointer;
+}
+
+.parts img {
+    width: 60%;
+    height: 60%;
+}
+
+.parts h1 {
+    font-size: 4rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+
+.parts p {
+    font-size: 1.8rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bolder;
+}
+
+#black {
+    background: black;
+    color: white;
+    border: 2px solid white;
+}
+
+.container5 {
+    color: black;
+    background: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    position: inherit;
+}
+
+.upper {
+    width: 100%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.lower {
+    margin-top: 30px;
+    width: 100%;
+    height: 20%;
+    border-top: 2px solid white;
+}
+
+.s-icon {
+    width: 100%;
+    height: 20%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.s-icon img {
+    width: 10%;
+    height: 70%;
+    margin: 1rem;
+}
+
+#instra {
+    background: white;
+}
+
+#b {
+    width: 25%;
+    height: 100%;
+    background: transparent;
+    color: white;
+    margin: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    text-align: center;
+    font-size: 2rem;
+    padding: 1rem;
+    border: 2px solid white;
+    margin-top: 30px;
+    border-radius: 2rem;
+}
+
+#b input {
+    width: 95%;
+    height: 15%;
+    font-size: 18px;
+    border: 2px solid black;
+    text-align: center;
+    border-radius: 1.5rem;
+    padding: 1.5rem;
+    margin: 8px 0;
+}
+
+.footericon {
+    width: 100%;
+    height: 90%;
+    background: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.text-footer {
+    color: white;
+    font-size: 3rem;
+    text-align: center;
+}
+
+/*REsponsive*/
+.hambar {
+    display: none;
+    position: fixed;
+    cursor: pointer;
+    right: 25%;
+}
+
+.line {
+    background: white;
+    width: 35px;
+    height: 4px;
+    margin: 3px 5px;
+    color: white;
+}

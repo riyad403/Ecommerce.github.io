@@ -1,0 +1,42 @@
+.btn{
+    font-size: 15px;
+}
+.logo a span{
+    font-size: 3rem;
+}
+.logo a h2{
+    font-size: 3.5rem;
+    padding: 0;
+}
+.line{
+    width: 25px;
+}
+.side-icon{
+    right: 8%;
+}
+.maintext{
+    flex-direction: column-reverse;
+}
+.lefttext{
+    width: 100%;
+}
+.searchbar input{
+    width: 20rem;
+}
+.login-none{
+    right: 0;
+    width: 97%;
+}
+.fav{
+    right: 0;
+    width: 97%;
+}
+.searchbar{
+    right: 0;
+}
+.parts h1{
+    font-size: 2rem;
+}
+.parts p{
+    text-align: center;
+}

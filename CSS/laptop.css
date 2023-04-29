@@ -1,0 +1,86 @@
+.logo {
+    justify-content: space-between;
+    height: 72px;
+}
+
+.logo a span {
+    font-size: 5rem;
+}
+
+.logo a h2 {
+    font-size: 5rem;
+    padding: 0 2rem;
+}
+
+.nav ul {
+    display: flex;
+    justify-content: start;
+}
+
+.nav-list {
+    flex-direction: column;
+    align-items: center;
+}
+
+.hambar {
+    display: block;
+}
+
+.nav {
+    height: 72px;
+}
+
+.nav-list {
+    background: rgb(0, 0, 0, 0.7);
+    background-blend-mode: darken;
+}
+
+.list-resp {
+    opacity: 0;
+}
+
+.nav li {
+    padding: 20px;
+    font-size: 3rem;
+}
+
+.nav li a:hover {
+    color: black;
+    background: white;
+    border: 2px solid green;
+    border-radius: 0.5rem;
+
+}
+
+.side-icon {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    height: 72px;
+    font-size: 5rem;
+    right: 5%;
+}
+
+.side-icon a span {
+    font-size: 4rem;
+    color: red;
+}
+.login-none{
+    right: 15%;
+    width: 70%;
+}
+.fav{
+    right: 15%;
+    width: 70%;
+}
+.searchbar{
+    right: 15%;
+}
+
+.upper {
+    flex-direction: column;
+}
+
+#b {
+    width: 80%;
+}
